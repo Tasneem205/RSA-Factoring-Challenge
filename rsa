@@ -11,7 +11,7 @@ with open(argv[1]) as f:
             continue
         for i in range(3, num, 2):
             if num%i == 0:
-                factor = num/i
+                factor = num//i
                 for j in range(3, factor, 2):
                     if factor % j == 0 or j == 0:
                         break
